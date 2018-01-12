@@ -13,6 +13,7 @@ body {
 .containerMaxWidth{
   max-width: 960px;
   margin: 0 auto;
+  overflow: scroll;
 }
 
 /* First, we describe the elements in the top "header area" */
@@ -48,14 +49,18 @@ h1 {
 
 .nav {
   display: flex;
-  margin-top: 40px;
-  /* margin-left: 800px; */
+  margin-top: -60px;
+  margin-left: 600px;
 }
 
 .nav p {
   margin-right: 10px;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
+  }
+
+p{
+  padding: 20px;
 }
 
 /*Second we describe the elements in the main "body area" */
