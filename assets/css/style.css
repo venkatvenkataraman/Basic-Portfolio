@@ -1,0 +1,96 @@
+*{
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* First, we describe the elements in the top "header area" */
+
+h1 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 24px;
+  color: #fff;
+  position: fixed;
+  margin-left:55px;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+#headerContainingBox {
+  position: fixed;
+  width:100%;
+  height: 80px;
+  border: 100px;
+  border-top-color: #eee;
+  background-color: #ffffff;
+}
+
+#headerTealBox {
+  position: fixed;
+  margin-left:40px;
+  width:40%;
+  height: 80px;
+  border: 100px;
+  border-color: #cccccc;
+  background-color: #4aaaa5;
+}
+
+.nav {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 800px;
+}
+
+.nav p {
+  margin-right: 10px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/*Second we describe the elements in the main "body area" */
+
+body {
+  background:url('../images/ep_naturalwhite.png');
+  }
+
+#mainSectionWhiteBox{
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  margin-left: 40px;
+  margin-top: 120px;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 650px;
+  height: 450px;
+  color:  #4aaaa5;
+  background: #ffffff;
+  z-index: 5;
+}
+
+.aboutMeText{
+  font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  /* letter-spacing: 2px; */
+}
+
+#sidebarWhiteBox{
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  margin-left: 775px;
+  margin-top: 120px;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 200px;
+  color:  #4aaaa5;
+  background: #ffffff;
+  z-index: 5;
+}
+
+.faUl {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 3px;
+}
