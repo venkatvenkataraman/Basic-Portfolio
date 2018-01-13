@@ -6,22 +6,24 @@
 
 body {
   background:url('../images/ep_naturalwhite.png');
-  border-bottom: 15px;
-  border-color: #4aaaa5;
+  overflow: scroll;
+  height: auto;
+  /* border-bottom: 15px;
+  border-color: #4aaaa5; */
   }
 
 .containerMaxWidth{
   max-width: 960px;
   margin: 0 auto;
-  overflow: scroll;
-}
+  }
 
 /* First, we describe the elements in the top "header area" */
 
 #headerContainingBox {
   position: fixed;
+  /* width: 100%; */
   width:960px;
-  height: 80px;
+  height: 60px;
   border: 0px;
   border-top-color: #eee;
   background-color: #ffffff;
@@ -31,7 +33,7 @@ body {
   position: relative;
   /* margin-left:40px; */
   width:500px;
-  height: 80px;
+  height: 60px;
   border: 0px;
   border-color: #cccccc;
   background-color: #4aaaa5;
@@ -43,7 +45,7 @@ h1 {
   color: #fff;
   position: relative;
   margin-left:30px;
-  padding-top: 30px;
+  padding-top: 15px;
   z-index: 2;
 }
 
@@ -65,16 +67,16 @@ p{
 
 /*Second we describe the elements in the main "body area" */
 
-#mainSectionWhiteBox{
+#mainSectionBox{
   font-size: 18px;
   font-weight: bold;
   position: fixed;
   margin-left: 0;
-  margin-top: 120px;
-  padding: 0px;
+  margin-top: 90px;
+  padding: 10px;
   margin-bottom: 30px;
   width: 650px;
-  height: 450px;
+  height: 400px;
   color:  #4aaaa5;
   background: #ffffff;
   z-index: 5;
@@ -85,19 +87,19 @@ p{
   font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
-  /* letter-spacing: 2px; */
 }
 
-#sidebarWhiteBox{
+#sidebarBox{
   font-size: 18px;
   font-weight: bold;
   position: fixed;
   margin-left: 690px;
-  margin-top: 120px;
-  padding: 0px;
+  margin-top: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 30px;
   width: 270px;
-  height: 200px;
+  height: 100px;
   color:  #4aaaa5;
   background: #ffffff;
   z-index: 5;
@@ -105,6 +107,79 @@ p{
 
 .faUl {
   display: flex;
-  margin-top: 40px;
-  margin-left: 3px;
+  margin-top: 0px;
+}
+
+.fa-linkedin-square{
+  color:#0077B5;
+}
+
+.fa-facebook-square{
+  color:#3b5998;
+}
+
+.fa-twitter-square{
+  color:#00aced;
+}
+
+.fa-github-square{
+  color:#6e5494;
+}
+
+#footerBox{
+  font-size: 10px;
+  color: #aaa;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  position: fixed;
+  margin-top: 540px;
+  border-top: 5px solid #4aaaa5;
+  /* width: 100%; */
+  width: 960px;
+  height: 20px;
+  background-color:#666666;
+  z-index: 5;
+}
+
+/* CSS Styling for the Contact Form */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.containerFormMaxWidth {
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.containerPortfolioMaxWidth {
+    max-width: 960px;
+    margin: 0 auto;
+    /* position: relative;
+    text-align: center;
+    color: white; */
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
